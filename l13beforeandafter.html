@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>before & after Method</title>
+
+    <style type="text/css">
+      h2{
+          color:red;
+      }
+  
+    </style>
+    
+  </head>
+  <body>
+    <h1>Hello Myanmar</h1>
+    <h1>Hello Thailand</h1>
+    <span>Hello indonesia</span>
+
+    <button type="button" id="before">Before Insert</button>
+    <button type="button" id="after">After Insert</button>
+
+    <script src="./libs/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // console.log('hi');
+
+        // => before(), insert()
+        // - CSSရှိ ::before, ::after psuedoelementတွေလိုပဲ elementရှေ့ elementနောက်မှာ
+        // စာသားတွေထည့်ချင်ရင် သုံးနိုင်
+        // - ()ထဲ ထည့်ချင်တဲ့ စာသားကို ရေးရမယ်
+        // - cSSရှိ ::before, ::afterနဲ့ မတူတာက before(), after()က htmltagတွေကိုပါ လက်ခံပြီး စာသားတွေက 
+        // သတ်မှတ်ထားတဲ့ elementက block-levelဆိုရင် ကပ်လျက်မပေါ်, beforeဆို အပေါ်တကြောင်းအနေနဲ့ သပ်သပ်ပေါ်ပြီး
+        // afterဆို အောက်တကြောင်းအနေနဲ့ သပ်သပ်ပေါ်မယ်
+
+        $("#before").click(function () {
+          // console.log('i am before');
+
+          $("h1").before("<p><b>Save Myanmar</b></p>");
+        });
+
+        $("#after").click(function () {
+          // console.log('i am after');
+
+          $("h1").after("<p><b>Pary Myanmar</b></p>");
+
+         
+        });
+
+        
+      });
+    </script>
+  </body>
+</html>
+<!-- >> TO l14 25.5.2022 (WED) -->

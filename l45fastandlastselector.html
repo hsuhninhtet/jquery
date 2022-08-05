@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:fast and :last Selector</title>
+	<style type="text/css">
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			width: 600px;
+			background-color: #f4f4f4;
+			padding: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<h1>MY Fav Colors</h1>
+
+	<ul>
+		<li>Black</li>
+		<li>White</li>
+		<li>Blue</li>
+		<li>Pink</li>
+		<li></li>
+		<li>violet</li>
+		<li></li>
+	</ul>
+
+	<hr/>
+
+	<h1>My Fav Anime</h1>
+
+	<ol>
+		<li>Oregairu</li>
+		<li>Horimiya</li>
+		<li>Love is hard for otaku</li>
+		<li></li>
+		<li>onepiece</li>
+		<li>black clover</li>
+		<li></li>
+	</ol>
+	</div>
+
+<script src="./libs/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//console.log("hiii");
+
+        // :first
+        // $("ul li:first").css("background-color","steelblue");
+        $("li:first").css("background-color","steelblue");
+
+        //:last
+        // $("ol li:last").css("background-color","orange");
+        $("li:last").css("background-color","violet");
+
+	});
+</script>
+</body>
+</html>
